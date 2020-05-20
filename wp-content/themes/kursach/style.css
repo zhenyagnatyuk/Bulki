@@ -1,0 +1,904 @@
+/*
+Theme Name: bulki
+Author: Gnatyuk, Chovhan
+Version: 1.0.13
+License: GNU General Public License v2 or later
+*/
+
+body{
+	margin: 0;
+	padding: 0;
+}
+#btn_menu{
+	display:none;
+}
+header{
+	background: #000;
+	height: 100px;
+}
+header .menu{
+	display: flex;
+	flex-direction: row;
+}
+header .menu li, footer .menu .footer_menu li{
+	list-style-type: none;
+}
+header .menu li a, footer .menu .footer_menu a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+header .menu li a{
+	padding-left: 50px;
+}
+header .menu li a.active, header .menu li a:hover, footer .menu .footer_menu a:hover{
+	color: #3BCA34;
+	transition: .5s;
+}
+
+header .logo-section img{
+	height: 100px;
+	width: auto;	
+}
+
+header .menu-section{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+.burger_main{
+	position: relative;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.burger_main img{
+	position: absolute;
+    height: 100%;
+    top: 10vh;
+	left: 10vw;
+}
+
+#underheader{
+	background-color: #000;
+	padding-bottom: 30px;
+	background-size: cover;
+	height: calc(100vh - 100px);
+	min-height: 850px;
+	padding: 30px 0;
+}
+#underheader .container{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#underheader .logo{
+	display: flex;
+	flex-direction: column;
+}
+
+#underheader .logo img{
+	height: 100%;
+	margin-top: 75px;
+}
+
+#underheader .logo a, #feedback  input[type="submit"] {
+	margin-top: 90px;
+	width: 100%;
+	padding: 25px;
+	border-radius: 51px;
+	background: #3BCA34;
+	border: 2px solid #3BCA34;
+	text-align: center;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 17px;
+	font-weight: 600;
+	text-decoration: none;
+}
+#underheader h1{
+	display: none;
+}
+#underheader .logo a:hover{
+	color: #3BCA34;
+	background: #000;
+	transition: .5s;
+}
+#feedback input[type="submit"]:hover{
+	background: #fff;
+	transition: .5s;
+}
+#underheader .info{
+	letter-spacing: 2px;
+	font-size: 22px;
+	font-weight: bold;
+	color: white;
+}
+#underheader .info img{
+	margin-right: 20px;
+}
+#underheader .info{
+	margin-top: 40px;
+}
+#underheader .info div:nth-last-child(1){
+	text-align: right;
+}
+#about_us, #menu, #sales{
+	height: 100vh;
+	min-height: 850px;
+}
+#about_us, #menu .container, #sales{
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+}
+#menu .container{
+	height: 100%;
+}
+#about_us .we{
+	width: 100%;
+}
+
+#about_us .photo p{
+	margin-top: 30px;
+}
+#about_us .photo .inst{
+	filter: brightness(0);
+}
+
+#about_us .photo{
+	text-align:center;
+}
+#about_us .text {
+	z-index:1;
+}
+
+#about_us .mobile{
+	display: none;
+}
+
+#about_us .text h2, #about_us .text p, #about_us .text a{
+	margin-left: 35px;
+}
+
+#about_us  h2, #menu h2, #sales h2, #delivery h2, #underheader_contacts h2{
+	font-size: 80px;
+	letter-spacing: 2.5px;
+	font-weight: bold;
+}
+
+#about_us .text p, #menu p, #delivery p, .entry-content p{
+	font-family: 'Lato', sans-serif;
+	font-size: 30px;
+}
+
+#about_us .text img, #menu .text img, #sales .link img, #delivery .text img, #discounts_block .link img{
+	padding-right: 20px;
+}
+#about_us .text{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+#about_us .text a, #menu a, #sales .link a, #discounts_block .link a{
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+	font-size: 20px;
+	letter-spacing: 2.5px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+}
+#menu a{
+	padding-top: 30px;
+	color: #fff;
+}
+#menu{
+	background-color: #000;
+	background-size: cover;
+	height: 100vh;
+}
+#menu h2, #menu p{
+	color: #fff;
+	margin-bottom: 20px;
+}
+#menu p{
+	font-weight: 300;
+}
+#sales a{
+	text-decoration:none;
+	color: #000;
+}
+#sales h2{
+	text-align:center;
+	margin-top: 40px;
+}
+#sales .tile img{
+	width: 100%;
+    height: 400px;
+}
+#sales .tile{
+	margin-top: 20px;
+}
+#sales .tile .date, #discounts_block .date, #discounts_block p{
+	color: #676767;
+}
+#sales .tile p,  #discounts_block .date, #discounts_block p{
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+#sales .link, #discounts_block .link{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 20px;
+}
+#delivery{
+	background-color: #EEEEEE;
+	padding: 70px 0;
+}
+#delivery p{
+	margin-top: 60px;
+}
+#delivery .logos{
+	margin-top: 100px;
+}
+#delivery p, #delivery h2{
+	text-align: center;
+}
+
+#delivery .logos{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-end;
+    justify-content: space-around;
+}
+#delivery .logos a:nth-last-child(1){
+	padding-top: 50px;
+}
+footer {
+	background-image: url('images/footer_back.png');
+	color: #fff;
+	background-size: cover;
+	padding: 30px 0 10px;
+}
+footer .copyright{
+	border-top: 1px solid #707070;
+	margin-top: 30px;
+	padding-top:10px;
+}
+footer .copyright p{
+	margin: 0;
+}
+
+footer .logo img{
+	width: 100%;
+}
+
+footer .menu ul{
+	padding: 0;
+}
+footer .menu, footer .logos, footer .info{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+}
+footer .menu .footer_menu{
+	display: flex;
+	flex-direction: column;
+	justify-content:space-around;
+	height: 100%;
+}
+footer .logos{
+	justify-content: space-around;
+}
+footer .info{
+	 justify-content: space-evenly;
+}
+footer .info img{
+	width: 29px;
+	margin: 0 20px;
+}
+footer .info .social{
+	margin-top: 40px;
+}
+footer .info p{
+	margin: 0;
+}
+.burger_menu{
+	position: relative;
+}
+.burger_menu img{
+	position: absolute;
+    top: 0;
+    right: 0;
+    height: 850px;
+    width: 55vw;
+    z-index: 0;
+    padding: 0;
+}
+#underheader_contacts{
+	background: black;
+	padding: 30px 0;
+}
+#underheader_contacts h2{
+	margin-bottom: 30px;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+}
+#underheader_contacts .contacts{
+	padding-bottom: 30px;
+}
+#underheader_contacts hr{
+	height: 1px;
+	border: none;
+	background: #FFA60D;
+}
+#underheader_contacts span{
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 14px;
+	color: white;
+	padding-top: 50px;
+	text-align: center;
+}
+
+#underheader_contacts .contact_item{
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	border-right: 1px solid rgba(59,202,52, 0.4);
+}
+#underheader_contacts .contact_item:nth-last-child(1){
+	border:none;
+}
+#underheader_contacts .contacts .mail{
+	margin-bottom: 15px;
+}
+#underheader_contacts a{
+	text-decoration: none;
+}
+#underheader_contacts p, .title_post h1{
+	font-family: "Lato", sans-serif;
+	letter-spacing: 2.5px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #3BCA34;
+	text-align: center;
+}
+#feedback{
+	padding: 50px 0;
+}
+#feedback h3{
+	letter-spacing: 2.5px;
+	font-size: 30px;
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 20px 0;
+}
+#feedback a {
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+}
+#feedback p{
+	text-align: center;
+	font-size: 20px;
+	margin: 20px 0;
+}
+#feedback img{
+	margin: 20px;
+	width: 50px;
+	height: 50px;
+}
+#feedback .social_netw{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#feedback input[type=text], #feedback input[type=tel], #feedback input[type="email"], textarea {
+	width: 100%;
+	padding: 12px 0;
+	margin: 20px 0;
+	border: none;
+	border-bottom: 2px solid black;
+	background: inherit;
+	resize: none;
+}
+#feedback textarea{
+	height: 100px;
+}
+#feedback .form{
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#feedback .form p,#feedback .form span{
+	width:100%;
+	font-size: 20px;
+    margin: 0;
+}
+#feedback span{
+	text-align: center;
+}
+#feedback input[type=text]:focus, #feedback input[type=tel]:focus, #feedback input[type="email"]:focus, textarea:focus {
+	outline: none;
+}
+#feedback  input[type="submit"]{
+	margin: 20px 0;
+	padding: 20px 65px;
+	width: auto;
+	cursor:pointer;
+}
+#menu_block{
+	padding: 50px 0;
+}
+#menu_block .sort{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0;
+}
+#menu_block .sort li a{
+	text-decoration: none;
+	font-size: 20px;
+	letter-spacing: 2.5px;
+	color: black;
+	padding: 10px 30px;
+	border: 1px solid #707070;
+	border-radius: 30px;
+	text-align: center;
+	width: 100%;
+}
+#menu_block .sort li a:hover{
+	color: #fff;
+	background: #000;
+	transition: .5s;
+}
+#menu_block .sort li{
+	margin: 10px;
+	display: flex;
+	width: 170px;
+}
+#menu_block .menu_item h4{
+	font-weight: bold;
+	letter-spacing: 2.5px;
+	font-size: 22px;
+	height: 52px;
+}
+
+#menu_block .menu_item p{
+	font-size: 14px;
+	color: gray;
+	margin: 10px 0;
+}
+#menu_block .menu_item img{
+	border-top-left-radius: 3.5%;
+    border-top-right-radius: 3.5%;
+	width: 100%;
+}
+#menu_block .product_description {
+	padding: 20px 25px;
+	width: 100%;
+}
+#menu_block .menu_item{
+	margin-bottom: 30px;
+}
+#menu_block .menu_item .consist{
+	height: 65px;
+}
+#menu_block .menu_item:hover{
+	box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16);
+	border-radius: 3.5%;
+	
+}
+.pagination a, .pagination span{
+	padding: 10px 20px;
+	color: gray;
+	font-size: 18px;
+	text-decoration: none;
+}
+.pagination .page_item:active, .pagination span{
+	background: #3BCA34;
+	border-radius: 10px;
+	color: white;
+}
+#menu_block .my_pag, #discounts_block .my_pag{
+	justify-content: center;
+}
+#discounts_block{
+	padding: 50px 0;
+}
+#discounts_block .discount_list{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#discounts_block p{
+	font-size: 20px;
+}
+#discounts_block .discount_img img{
+	width: 100%;
+	border-radius: 3.5%;
+}
+#discounts_block .discount_description{
+	padding: 20px 30px;
+}
+#discounts_block .link{
+	justify-content: flex-start;
+	margin-top: 30px;
+}
+#discounts_block .discount_item{
+	margin-bottom: 50px;
+}
+#discounts_block .discount_item:nth-child(2n){
+	display: flex;
+	flex-direction: row-reverse;
+}
+.about_us_page h2{
+	font-family: "Lato", sans-serif;
+	font-size: 30px;
+	color:#808080;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	text-align: center;
+}
+.about_us_page hr{
+	background-color: #3BCA34;
+	height: 2px;
+	border: none;
+	width: 50px;
+}
+.about_us_page{
+	padding: 200px 15px;
+	margin: 0 auto;
+	max-width: 60%;
+}
+.about_us_page p{
+	font-family: "Lato", sans-serif;
+	font-size: 22px;
+	text-align: center;
+	margin-top: 45px;
+}
+.about_img img{
+	width: 100%;
+	height: 500px;
+}
+@media(max-height:800px){
+	#sales h2, #about_us h2, #menu h2, #delivery h2, #underheader_contacts h2, .about_us_page h2{
+		font-size: 50px ;
+	}
+	#about_us .text p, #menu p, #delivery p{
+		font-size: 24px;
+	}
+	#about_us .we{
+		height: 400px;
+		width: auto;
+	}
+	#delivery .logos{
+		margin-top: 50px;
+	}
+}
+@media(max-width:1439px){
+	.burger_main img{
+		height: 90%;
+	}
+	#menu_block .menu_item .consist{
+		height: 85px;
+	}
+
+}
+@media(max-width:1200px){
+	.burger_main img{
+		height: 80%;
+		left: 2vw;
+	}
+	.discount_item h2{
+		font-size: 28px;
+	}
+	#discounts_block .discount_description{
+		padding: 0 30px;
+	}
+	footer .info{
+		text-align: center;
+	}
+}
+@media(max-width:1024px and min-width: 768px){
+	#about_us, #menu, #sales{
+		min-height: auto;
+	}
+	.burger_menu img{
+		height: 100vh;
+	}
+}
+@media(max-width:992px){
+	#underheader h1{
+		display: block;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 26px;
+	}
+	#underheader .logo img{
+		display: none;
+	}
+	#underheader .logo img{
+		height: 300px;
+	}
+	#underheader_contacts .contact_item{
+		border:none;
+	}
+	header .logo-section img{
+		width: 250px;
+	}
+	header .menu li a{
+		padding-left: 15px;
+	}
+	#about_us .we{
+		width: 100%;
+		height: auto;
+	}
+	#about_us  h2 #menu h2, #sales h2, #delivery h2, #underheader_contacts h2{
+		font-size: 40px;
+	}
+	#about_us .text p, #menu p, #delivery p{
+		font-size: 18px;
+	}
+	#about_us .text a, #menu a, #sales .link a, #discounts_block .link a{
+		font-size: 18px;
+	}
+	#underheader .logo{
+		text-align: center;
+	}
+	#underheader .logo a{
+		margin-top: 40px;
+	}
+	#underheader h1 span{
+		color: #3BCA34;
+	}
+	.burger_main{
+		text-align: center;
+	}
+	.burger_main img{
+		position: relative;
+		height: 400px;
+		left: auto;
+	}
+	footer .logos img{
+		width: 100%;
+	}
+	#delivery .logos{
+		margin-top: 0;
+	}
+	#delivery .logos a{
+		padding-top: 20px;
+	}
+	#delivery .logos a img{
+		width: 200px;
+	}
+	#sales h2, #about_us h2, #menu h2, #delivery h2, #underheader_contacts h2{
+		font-size: 50px;
+	}
+	.sort{
+		justify-content: center;
+	}
+	#discounts_block h2{
+		text-align: center;
+		margin: 30px 0
+	}
+	#discounts_block .link{
+		justify-content: center;
+	}
+}	
+@media(max-width:767px){
+	#btn_menu{
+		display: block;
+	}
+	
+	#header_menu ul{
+		display: none;
+		position: absolute;
+		background-color: black;
+		height: auto;
+		margin: 0;
+		top: 100px;
+		width: 100vw;
+		flex-direction: column;
+		padding: 0;
+		align-items: center;
+		right: 0;
+		z-index: 1;
+	}
+	
+	#header_menu li{
+		padding-bottom: 10px;
+	}
+	
+	#underheader .info div{
+		text-align: center !important;
+	}
+	
+	#underheader .info p{
+		font-size: 20px;
+	}
+	#underheader .info p img{
+		width: 26px;
+	}
+	
+	header .logo-section img{
+		width: auto;
+	}
+	footer .logo{
+		margin-top: 40px;
+		text-align: center;
+	}
+	footer .logo img{
+		height: 200px;
+		width: 200px;
+	}
+	
+	header .menu li a, footer .menu .footer_menu{
+		text-align: center;
+	}
+	
+	header .menu li a, footer .menu .footer_menu li{
+		padding: 8px 0;
+	}
+	header .menu li a, footer .menu .footer_menu a{
+		font-size: 16px;
+	}
+	footer .logos{
+		margin-top: 10px;
+	}
+	footer .logos a{
+		margin-top: 20px;
+	}
+	footer .info p{
+		margin-top: 15px;
+	}
+	footer .copyright{
+		text-align: center;
+	}
+	.burger_menu{
+		text-align: center;
+	}
+	.burger_menu img{
+		position: relative;
+		height: 300px;
+		width: 300px;
+		margin-top: 80px;
+		content:url("images/burg-removebg-preview.png");
+	}
+	#menu .container h2, #menu .container a{
+		text-align: center;
+		margin-top: 30px;
+	}
+	
+	#menu .text a{
+		display: block;
+	}
+	
+	#menu .container{
+		height: auto;
+	}
+	
+	#about_us .mobile{
+		display: block;
+	
+	}
+	#about_us .infull{
+		display: none;
+	}
+	#about_us .we{
+		width: 500px;
+		height: 300px;
+		border-radius: 60px;
+		margin-top: 30px;
+	}
+	#about_us .text{
+		margin-top: 30px;
+	}
+	#about_us .text a{
+		display: block;
+		text-align: center;
+		margin-top: 20px;
+	}
+	#sales{
+		height: auto;
+	}
+	#sales .tile p{
+		margin: 10px 0;
+	}
+	#sales .link, #discounts_block .link{
+		margin-bottom: 50px;
+	}
+	#menu_block .menu_item .consist{
+		height: 120px;
+	}
+	#menu_block .menu_item h4{
+		font-size: 18px;
+	}
+	#discounts_block h2, #underheader_contacts p{
+		font-size: 25px;
+	}
+}
+@media(max-width:575px){
+	#delivery .text img{
+		width: 60px;
+		height: auto;
+	}
+	#delivery p, .about_us p{
+		margin-top: 30px;
+	}
+	#sales h2, #about_us h2, #menu h2, #delivery h2, #underheader_contacts h2, #discounts_block h2, #underheader_contacts p, .about_us h2{
+		font-size: 24px;
+	}
+	#feedback h3{
+		font-size: 20px;
+	}
+	#about_us .we{
+		width: 100%;
+	}
+	#about_us .text h2, #about_us .text p, #about_us .text a{
+		margin-left: 0;
+	}
+	.custom-logo-link img{
+		content:url("images/another_logo.png");
+	}
+	#delivery .logos{
+		flex-direction: column;
+		align-items: center;
+	}
+	#sales .tile img{
+		height: 300px;
+	}
+	#menu_block .menu_item .consist{
+		height: 65px;
+	}
+	#menu_block .menu_item h4{
+		font-size: 22px;
+	}
+	#menu_block .menu_item{
+		box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16);
+		border-radius: 3.5%;
+	}
+	#menu_block .menu_item h4{
+		height: auto;
+		padding: 12px 0;
+	}
+	#discounts_block .discount_description p{
+		font-size: 16px;
+	}
+	.about_us_page{
+		width: 100%
+	}
+	.about_us_page p{
+		font-size: 20px;
+	}
+}
+@media(max-width:310px){
+	.burger_menu img{
+		width: 100%;
+		height: auto;
+	}
+	#underheader{
+		height: auto;
+	}
+	#underheader .container{
+		height: auto;
+	}
+}
